@@ -108,7 +108,8 @@ function showPreview(index) {
   window.clearTimeout(hideTimer);
   const project = projects[index];
   const position = positionFor(index);
-  preview.style.left = `${Math.min(84, Math.max(16, position))}%`;
+  const isCompact = window.matchMedia("(max-width: 800px)").matches;
+  preview.style.left = isCompact ? "50%" : `${Math.min(84, Math.max(16, position))}%`;
   preview.style.setProperty("--accent", project.accent);
   previewVisual.style.setProperty("--accent", project.accent);
   previewNumber.textContent = String(index + 1).padStart(2, "0");
