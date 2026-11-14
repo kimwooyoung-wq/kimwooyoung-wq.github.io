@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0b0a" />
+    <meta name="description" content="김우영의 프로젝트 여정을 따라가는 인터랙티브 타임라인 포트폴리오" />
+    <title>김우영 — Timeline Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="처음으로 이동">
+        <span class="brand-mark">KWY</span>
+        <span class="brand-name">김우영</span>
+      </a>
+      <nav aria-label="주요 메뉴">
+        <a href="#projects">Journey</a>
+        <a href="#about">About</a>
+        <a href="https://mail.naver.com/v2/new?to=wykim09111%40naver.com&amp;subject=%EA%B9%80%EC%9A%B0%EC%98%81%20%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%20%EB%AC%B8%EC%9D%98" target="_blank" rel="noreferrer" aria-label="네이버 메일에서 김우영에게 이메일 작성">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="intro" id="journey" aria-labelledby="intro-title">
+        <div class="intro-topline">
+          <p id="intro-title">KIM WOOYOUNG · PROJECT TIMELINE</p>
+          <span>THE JOURNEY BEGINS</span>
+        </div>
+        <div class="intro-copy">
+          <div class="eyebrow">KIM WOOYOUNG · PORTFOLIO</div>
+          <h1>생각을 발견하고,<br /><span>프로젝트로 연결합니다.</span></h1>
+          <p>첫 시도부터 지금까지.<br />점 위에 올리면 미리보기가 열리고, 클릭하면 GitHub로 이동합니다.</p>
+        </div>
+        <div class="intro-stage">
+          <div class="intro-years" aria-hidden="true">
+            <span>2026.03</span><span>2026.05</span><span>2026.09</span><span>2026.09</span><span>2026.09 · NOW</span>
+          </div>
+          <div class="intro-track" aria-label="프로젝트가 시간순으로 나타나는 오프닝 타임라인">
+            <div class="intro-line-base"></div>
+            <div class="intro-line-draw"></div>
+            <div class="intro-line-pulse"></div>
+            <div class="intro-spark" aria-hidden="true"></div>
+
+            <div class="intro-milestones-layer" id="intro-milestones"></div>
+            <div class="intro-preview" id="intro-preview" aria-live="polite">
+              <div class="preview-visual" id="preview-visual" aria-hidden="true">
+                <span id="preview-visual-number">01</span>
+                <div class="preview-orbit"></div>
+                <strong id="preview-initials">SL</strong>
+              </div>
+              <div class="preview-copy">
+                <span id="intro-preview-index">PROJECT 01 · 2026.03.30</span>
+                <strong id="intro-preview-title">Sound-learn</strong>
+                <p id="intro-preview-description">음성과 멜로디를 분석해 연습 방향을 제시하는 보컬 학습 서비스입니다.</p>
+                <div class="preview-tags" id="intro-preview-tags"></div>
+                <a id="intro-preview-github" href="https://github.com/skek99110199-bit/Sound-learn" target="_blank" rel="noreferrer">GITHUB에서 보기 ↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="intro-scroll" href="#projects">
+          <span>VIEW ALL PROJECTS</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v15m0 0-6-6m6 6 6-6" /></svg>
+        </a>
+      </section>
+
+      <section class="journey" id="projects" aria-labelledby="journey-title">
+        <div class="section-heading">
+          <div>
+            <span class="section-index">01</span>
+            <p class="section-kicker">QUICK ACCESS · GITHUB SYNC</p>
+          </div>
+          <h2 id="journey-title">프로젝트</h2>
+          <p class="journey-guide"><span></span> 카드를 선택하면 GitHub 저장소로 이동합니다</p>
+        </div>
+        <div class="project-grid" id="project-grid" aria-label="GitHub 프로젝트 바로가기">
+        </div>
+        <div class="project-footer"><span><i></i> GITHUB CONNECTED</span><p>작은 실행이 큰 시스템을 만듭니다.</p></div>
+      </section>
+
+      <section class="about" id="about" aria-labelledby="about-title">
+        <div class="about-label"><span>02</span> ABOUT</div>
+        <div class="about-grid">
+          <h2 id="about-title">아직 완성되지 않은<br />이야기를 만드는 사람.</h2>
+          <div class="about-copy">
+            <p>안녕하세요, 김우영입니다.</p>
+            <p>이곳은 결과만 나열하는 포트폴리오가 아니라, 질문이 프로젝트가 되고 경험이 다음 선택으로 이어지는 과정을 기록하는 공간입니다.</p>
+            <p class="placeholder-note">프로젝트 내용은 WOOYOUNG / PROJECT OS와 GitHub를, 시작일과 정렬 순서는 각 GitHub 저장소의 생성 시각을 기준으로 정리했습니다.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" aria-label="연락하기">
+        <p>새로운 이야기를 함께 만들고 싶다면</p>
+        <a href="https://mail.naver.com/v2/new?to=wykim09111%40naver.com&amp;subject=%EA%B9%80%EC%9A%B0%EC%98%81%20%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%20%EB%AC%B8%EC%9D%98" target="_blank" rel="noreferrer" aria-label="네이버 메일에서 wykim09111@naver.com에게 이메일 작성">LET'S TALK <span>↗</span></a>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 KIM WOOYOUNG</span>
+      <span>SEOUL · KOREA</span>
+      <a href="#top">BACK TO TOP ↑</a>
+    </footer>
+
+  </body>
+</html>
